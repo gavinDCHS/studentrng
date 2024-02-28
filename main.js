@@ -17,6 +17,10 @@ const animateCSS = (selector, animation, prefix = 'animate__') =>
     });
 
     function getRNG() {
+        
+        const calledNumbersContainer = document.getElementById("calledNumbers");
+        const calledNumbersHeader = document.getElementById("calledNumbersHeader");
+        
         if (usedNumbers.length === students[document.getElementById('classBlock').value].length) {
             document.getElementById("randomNumber").innerText = 'All Done!';
             usedNumbers = [];
@@ -32,9 +36,6 @@ const animateCSS = (selector, animation, prefix = 'animate__') =>
         } while (usedNumbers.includes(rNum));
         
         const studentName = students[document.getElementById('classBlock').value][rNum];
-        
-        const calledNumbersContainer = document.getElementById("calledNumbers");
-        const calledNumbersHeader = document.getElementById("calledNumbersHeader");
         
         // Set inner text of calledNumbersHeader to 'Already Called' when the first name is called
         if (calledStudents.length === 0) {
