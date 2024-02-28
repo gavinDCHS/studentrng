@@ -57,7 +57,7 @@ function getRNG() {
         calledStudents.push(studentName);
         
         document.getElementById("randomNumber").innerText = studentName;
-        animateCSS("#randomNumber", "rollIn");
+        animateCSS("#randomNumber", "flip");
     
         }, 1000);
         
