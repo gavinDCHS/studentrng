@@ -41,7 +41,8 @@ function getRNG() {
         if (calledStudents.length === 0) {
             calledNumbersHeader.innerText = 'Already Called';
         }
-        
+
+        setTimeout(function() {
         // Create a new span element for the student name
         const newStudentElement = document.createElement("span");
         newStudentElement.textContent = (calledStudents.length > 0 ? ', ' : '') + studentName;
@@ -57,6 +58,8 @@ function getRNG() {
         
         document.getElementById("randomNumber").innerText = studentName;
         animateCSS("#randomNumber", "rollIn");
+    
+        }, 1500);
         
     }
 }
