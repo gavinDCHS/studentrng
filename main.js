@@ -17,6 +17,7 @@ const animateCSS = (selector, animation, prefix = 'animate__') =>
 });
 
 function getRNG() {
+    animateCSS("#rngButton", "rotateIn");
     const calledNumbersContainer = document.getElementById("calledNumbers");
     const calledNumbersHeader = document.getElementById("calledNumbersHeader");
         
@@ -55,7 +56,7 @@ function getRNG() {
         calledStudents.push(studentName);
         
         document.getElementById("randomNumber").innerText = studentName;
-        animateCSS("#randomNumber", "rotateIn");
+        animateCSS("#randomNumber", "rollIn");
         
     }
 }
