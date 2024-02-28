@@ -16,9 +16,9 @@ const animateCSS = (selector, animation, prefix = 'animate__') =>
         }
 
         element.addEventListener('animationend', handleAnimationEnd, {once: true});
-    });
+});
 
-    function getRNG() {
+function getRNG() {
         
         if (usedNumbers.length === students[document.getElementById('classBlock').value].length) {
             document.getElementById("randomNumber").innerText = 'All Done!';
@@ -58,7 +58,7 @@ const animateCSS = (selector, animation, prefix = 'animate__') =>
         animateCSS("#randomNumber", "rotateIn");
         
     }
-    }
+}
 
 function getBlock() {
   numOfStudents = document.getElementById("classBlock").value;
