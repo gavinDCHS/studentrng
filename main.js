@@ -45,7 +45,7 @@ const animateCSS = (selector, animation, prefix = 'animate__') =>
         usedNumbers.push(rNum);
         calledStudents.push(studentName);
         
-        if (usedNumbers.length === students[document.getElementById('classBlock').value].length) {
+        if (usedNumbers.length === students[document.getElementById('classBlock').value].length + 1) {
             document.getElementById("randomNumber").innerText = 'All Done!';
             usedNumbers = [];
             calledStudents = [];
