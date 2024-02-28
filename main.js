@@ -17,6 +17,15 @@ const animateCSS = (selector, animation, prefix = 'animate__') =>
     });
 
     function getRNG() {
+        if (usedNumbers.length === students[document.getElementById('classBlock').value].length) {
+            document.getElementById("randomNumber").innerText = 'All Done!';
+            usedNumbers = [];
+            calledStudents = [];
+            calledNumbersContainer.textContent = ''; // Clear the list when all students are called
+            calledNumbersHeader.innerText = ''; // Clear the header text
+        
+        } else {
+        
         let rNum;
         do {
             rNum = Math.floor(Math.random() * students[document.getElementById('classBlock').value].length);
@@ -45,16 +54,10 @@ const animateCSS = (selector, animation, prefix = 'animate__') =>
         usedNumbers.push(rNum);
         calledStudents.push(studentName);
         
-        if (usedNumbers.length === students[document.getElementById('classBlock').value].length) {
-            document.getElementById("randomNumber").innerText = studentName;
-            usedNumbers = [];
-            calledStudents = [];
-            calledNumbersContainer.textContent = ''; // Clear the list when all students are called
-            calledNumbersHeader.innerText = ''; // Clear the header text
-        } else {
-            document.getElementById("randomNumber").innerText = studentName;
-            animateCSS("#randomNumber", "rotateIn");
-        }
+        document.getElementById("randomNumber").innerText = studentName;
+        animateCSS("#randomNumber", "rotateIn");
+        
+    }
     }
 
 function getBlock() {
