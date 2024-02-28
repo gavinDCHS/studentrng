@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <title>Random Student Selector</title>
+
+    <script type="text/javascript" src="main.js"></script>
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+
+    <!-- MDB icon 
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon"/>
+    -->
+
+    <!--animateCSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"/>
+
+    <!-- clipboard.js -->
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js"></script>
+
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.dark.min.css"/>
+
+    <!--my other custom CSS-->
+    <link rel="stylesheet" href="css/style.css"/>
+
+
+</head>
+<body>
+    <div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+     </div>
+
+     <div class="container d-flex justify-content-center mt-5">
+        <h1 class="animate__animated animate__fadeInDown">Random Student Selector</h1>
+     </div>
+
+     <br>
+     <br>
+     <br>
+     <div class="d-flex justify-content-center form-group animate__animated animate__rotateIn">
+        <select class="browser-default custom-select" id="classBlock" onchange="getBlock()">
+            <option value="1">1st Block</option>
+            <option value="4">4th Block</option>
+            <option value="5">5th Block</option>
+        </select>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <div class="container d-flex justify-content-center">
+        <button class="btn btn-lg btn-primary animate__animated animate__fadeInUpBig" onClick="getRNG()">get student</button>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="container d-flex justify-content-center">
+        <h3 id='randomNumber'></h3>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="container d-flex justify-content-center">
+        <h5 id="calledNumbersHeader"></h5>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="container d-flex justify-content-center">
+        <h6 id="calledNumbers"></h6>
+    </div>
+
+    
+</body>
+</html>
