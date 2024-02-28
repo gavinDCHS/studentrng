@@ -45,8 +45,8 @@ const animateCSS = (selector, animation, prefix = 'animate__') =>
         usedNumbers.push(rNum);
         calledStudents.push(studentName);
         
-        if (usedNumbers.length - 1 === students[document.getElementById('classBlock').value].length) {
-            document.getElementById("randomNumber").innerText = 'All Done!';
+        if (usedNumbers.length === students[document.getElementById('classBlock').value].length) {
+            document.getElementById("randomNumber").innerText = studentName;
             usedNumbers = [];
             calledStudents = [];
             calledNumbersContainer.textContent = ''; // Clear the list when all students are called
