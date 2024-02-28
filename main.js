@@ -2,8 +2,6 @@ let usedNumbers = [];
 let numOfStudents;
 const students = {1: ['Joselyn', 'David', 'Miguel', 'Jordan', 'Isaac', 'Dellis', 'Ericka', 'Victor', 'Alondra', 'Frankie', 'Alexis', 'Sylas', 'Gabriella', 'Juana C.', 'Alex G.', 'Samuel', 'Amir', 'Juana S.', 'Abigail', 'Kelly', 'Austin', 'Marisola', 'Candelaria', 'Daniel', 'Lucas', 'Aiden', 'Litzy', 'Jazmani'], 4: ['Cooper', 'Hannah', 'Lesly', 'Marlene', 'Reyna', 'Katelyn', 'Matea', 'Perla', 'Anndy', 'Andrea', 'Alton', 'Eimy', 'Juan', 'Pedro'], 5: ['Marcos', 'Wolfgang', 'Jazlyn', 'Adrian', 'Michelle', 'Cristian', 'Oscar', 'Jayden', 'Marwa', 'Wilber', 'Jaylin', 'Alexa', 'Jose', 'Erica', 'Paloma', 'Andi', 'Kevin', 'Tomasa', 'David', 'Esmeralda', 'Johan']};
 let calledStudents = [];
-const calledNumbersContainer = document.getElementById("calledNumbers");
-const calledNumbersHeader = document.getElementById("calledNumbersHeader");
 
 const animateCSS = (selector, animation, prefix = 'animate__') =>
     new Promise((resolve, reject) => {
@@ -19,13 +17,15 @@ const animateCSS = (selector, animation, prefix = 'animate__') =>
 });
 
 function getRNG() {
+    const calledNumbersContainer = document.getElementById("calledNumbers");
+    const calledNumbersHeader = document.getElementById("calledNumbersHeader");
         
         if (usedNumbers.length === students[document.getElementById('classBlock').value].length) {
             document.getElementById("randomNumber").innerText = 'All Done!';
             usedNumbers = [];
             calledStudents = [];
-            calledNumbersContainer.innerHTML = ''; // Clear the list when all students are called
-            calledNumbersHeader.innerText = ''; // Clear the header text
+            document.getElementById('calledNumbers').innerHTML = ''; // Clear the list when all students are called
+            document.getElementById('calledNumbersHeader').innerText = ''; // Clear the header text
         
         } else {
         
@@ -65,6 +65,6 @@ function getBlock() {
   document.getElementById("randomNumber").innerText = '';
   usedNumbers = [];
   calledStudents = [];
-  calledNumbersContainer.innerHTML = ''; // Clear the list when all students are called
-  calledNumbersHeader.innerText = ''; // Clear the header text
+  document.getElementById('calledNumbers').innerHTML = ''; // Clear the list when all students are called
+  document.getElementById('calledNumbersHeader').innerText = ''; // Clear the header text
 }
