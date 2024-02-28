@@ -17,7 +17,7 @@ const animateCSS = (selector, animation, prefix = 'animate__') =>
 });
 
 function getRNG() {
-    animateCSS("#rngButton", "rotateIn");
+    animateCSS("#rngButtonContainer", "rotateIn");
     const calledNumbersContainer = document.getElementById("calledNumbers");
     const calledNumbersHeader = document.getElementById("calledNumbersHeader");
         
