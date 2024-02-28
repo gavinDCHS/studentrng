@@ -21,7 +21,7 @@ const animateCSS = (selector, animation, prefix = 'animate__') =>
             document.getElementById("randomNumber").innerText = 'All Done!';
             usedNumbers = [];
             calledStudents = [];
-            calledNumbersContainer.textContent = ''; // Clear the list when all students are called
+            calledNumbersContainer.innerHTML = ''; // Clear the list when all students are called
             calledNumbersHeader.innerText = ''; // Clear the header text
         
         } else {
