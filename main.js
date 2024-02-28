@@ -36,13 +36,13 @@ function getRNG() {
         } while (usedNumbers.includes(rNum));
         
         const studentName = students[document.getElementById('classBlock').value][rNum];
-        
-        // Set inner text of calledNumbersHeader to 'Already Called' when the first name is called
+
+        setTimeout(function() {
+
         if (calledStudents.length === 0) {
             calledNumbersHeader.innerText = 'Already Called';
         }
-
-        setTimeout(function() {
+            
         // Create a new span element for the student name
         const newStudentElement = document.createElement("span");
         newStudentElement.textContent = (calledStudents.length > 0 ? ', ' : '') + studentName;
