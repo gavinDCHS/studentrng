@@ -59,7 +59,7 @@ function getRNG() {
         document.getElementById("randomNumber").innerText = studentName;
         animateCSS("#randomNumber", "flip");
     
-        }, 1000);
+        }, 700);
         
     }
 }
