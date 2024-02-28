@@ -66,7 +66,7 @@ function getRNG() {
 
 function getBlock() {
   numOfStudents = document.getElementById("classBlock").value;
-    document.getElementById("randomNumber").innerText = '';
+    document.getElementById("randomNumber").innerText = 'Select Block and Click Get Student to Start!';
     usedNumbers = [];
     calledStudents = [];
     document.getElementById('calledNumbers').innerHTML = ''; // Clear the list when all students are called
