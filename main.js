@@ -62,4 +62,8 @@ function getRNG() {
 
 function getBlock() {
   numOfStudents = document.getElementById("classBlock").value;
+    usedNumbers = [];
+    calledStudents = [];
+    document.getElementById('calledNumbers').innerHTML = ''; // Clear the list when all students are called
+    document.getElementById('calledNumbersHeader').innerText = ''; // Clear the header text
 }
