@@ -1,6 +1,6 @@
 let usedNumbers = [];
 let numOfStudents;
-const students = {1: ['Joselyn', 'David', 'Miguel', 'Jordan', 'Isaac', 'Dellis', 'Ericka', 'Victor', 'Alondra', 'Frankie', 'Alexis', 'Sylas', 'Gabriella', 'Juana C.', 'Alex G.', 'Samuel', 'Amir', 'Juana S.', 'Abigail', 'Kelly', 'Austin', 'Marisola', 'Candelaria', 'Daniel', 'Lucas', 'Aiden', 'Litzy', 'Jazmani'], 4: ['Cooper', 'Hannah', 'Lesly', 'Marlene', 'Reyna', 'Katelyn', 'Matea', 'Perla', 'Anndy', 'Andrea', 'Alton', 'Eimy', 'Juan', 'Pedro'], 5: ['Marcos', 'Wolfgang', 'Jazlyn', 'Adrian', 'Michelle', 'Cristian', 'Oscar', 'Jayden', 'Marwa', 'Wilber', 'Jaylin', 'Alexa', 'Jose', 'Erica', 'Paloma', 'Andi', 'Kevin', 'Tomasa', 'David', 'Esmeralda', 'Johan']};
+const students = {1: ['David', 'Jordan', 'Isaac', 'Victor', 'Sylas', 'Gabriella', 'Juana C.', 'Juana S.', 'Kelly', 'Austin', 'Marisola', 'Daniel', 'Litzy', 'Jazmani'], 4: ['Hannah', 'Lesly', 'Marlene', 'Katelyn', 'Perla', 'Anndy', 'Andrea', 'Alton', 'Juan'], 5: ['Marcos', 'Adrian', 'Cristian', 'Oscar', 'Jayden', 'Marwa', 'Wilber', 'Jose', 'Erica', 'Kevin', 'David', 'Johan']};
 let calledStudents = [];
 
 const animateCSS = (selector, animation, prefix = 'animate__') =>
